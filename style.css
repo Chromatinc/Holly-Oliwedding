@@ -1,4 +1,4 @@
-@import url('https://googleapis.com');
+ @import url('https://googleapis.com');
 * {
   font-family: 'Dancing Script', cursive;
 }
@@ -17,8 +17,6 @@
 
  
 }
-
-
 
 
 
@@ -452,29 +450,3 @@ h2::after {
 
 #dresscodep
 {text-align: center;}
-
-
-@media (max-width: 768px) {
-  .navbar {
-    gap: 8px;
-    padding: 10px;
-  }
-
-  .navbar a {
-    font-size: 16px;
-    padding: 6px 8px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .navbar a {
-    font-size: 16px;
-    padding: 6px 10px;
-    border-radius: 8px;
-  }
-
-  .navbar a:active {
-    transform: scale(0.95);
-  }
-}      
