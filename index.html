@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   
+  <style>
+        body {
+            background-image:  linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),url('images/grey _paper.jpg');
+            background-size: cover;       /* makes it fill the screen */
+            background-repeat: no-repeat; /* prevents repeating */
+            background-attachment: fixed;
+            background-position: center; /* centers the image */
+        }
+    </style>
+    <title>Holly & Oli Wedding</title>
+    
+</head>
+<body>
+
+  <nav class="navbar" >
+     <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+     <a href="localpicks.html">Local Picks</a>
+     <a href="gallery.html">Gallery</a>
+     <a href="registry.html">Registry</a>
+  </nav>
+    <main>
+      
+
+<header style="text-align: center; margin-bottom: 30px;">
+  <h1 style="margin: 0;">Holly & Oli's Wedding</h1>
+
+  <h2 style="margin: 5px 0 20px 0;">July 18th 2026</h2>
+
+  <a href="about.html">
+    <img 
+      src="images/back.JPG" 
+      alt="oli and holly at beach" 
+      style="
+        display: block;
+        margin: 0 auto;
+        width: 48vw;
+        max-width: 520px;
+        min-width: 280px;
+        height: auto;
+        border-radius: 10px;
+      "
+    >
+  </a>
+</header>
+    
+
+    <h2 id="countdownheader">Countdown To Our Wedding</h2>
+
+<div id="countdown">
+  <span id="days">0</span> Days
+  <span id="hours">0</span> Hours
+  <span id="minutes">0</span> Minutes
+  <span id="seconds">0</span> Seconds
+</div>
+
+   
+
+  
+    </main>
+
+
+
+<script>
+  // Set your target date
+  const targetDate = new Date("July 18, 2026 12:00:00").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const timeLeft = targetDate - now;
+
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+
+    if (timeLeft < 0) {
+      clearInterval(timer);
+      document.getElementById("countdown").innerHTML = "It's time!";
+    }
+  }
+
+  const timer = setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script>
+window.onload = function () {
+  confetti({
+    particleCount: 180,
+    spread: 120,
+    origin: { y: 0.4 }
+  });
+};
+</script>
+
+
+
+
+</form>
+
+
+
+
+
+<footer>
+<p> &copy; 2026 Site Coded  by Oli for fun! </p>
+</footer>
+</body>
+
+
+
+</html>
