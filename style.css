@@ -463,3 +463,36 @@ h2::after {
     padding: 6px 8px;
   }
 }
+
+
+@media (max-width: 768px) {
+
+  /* Navbar easier to tap/read */
+  .navbar a {
+    font-size: 20px;
+    padding: 8px 10px;
+  }
+
+  /* General text */
+  p,
+  li,
+  figcaption {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  /* Timeline text */
+  .timeline li {
+    font-size: 20px;
+  }
+
+  /* Headings */
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+}
