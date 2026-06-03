@@ -20,6 +20,8 @@
 
 
 
+
+
 .navbar a:hover {
   color: #8a7350;
   background: rgba(201, 168, 106, 0.12);
@@ -461,5 +463,18 @@ h2::after {
   .navbar a {
     font-size: 16px;
     padding: 6px 8px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 8px;
+  }
+
+  .navbar a:active {
+    transform: scale(0.95);
   }
 }
