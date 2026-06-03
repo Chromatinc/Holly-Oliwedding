@@ -238,11 +238,6 @@ h1, h2, h4,h5 {
   align-items: center;
 }
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
 
 
 
@@ -303,20 +298,7 @@ main {
 
 }
 
-/* Responsive video */
-.video-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 40px;
-}
 
-.video-container iframe {
-  width: 100%;
-  max-width: 700px;
-  aspect-ratio: 16 / 9;
-  border: none;
-}
 
 /* All images scale properly */
 img {
@@ -466,10 +448,9 @@ h2::after {
 
 
 .video-container {
-  position: relative;
   width: 100%;
   max-width: 560px;
-  margin: 0 auto;
+  margin: 40px auto;
   aspect-ratio: 16 / 9;
 }
 
