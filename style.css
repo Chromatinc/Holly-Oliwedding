@@ -343,7 +343,7 @@ img {
 
   #countdown {
     flex-wrap: wrap;
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .timeline {
@@ -459,7 +459,7 @@ h2::after {
   }
 
   .navbar a {
-    font-size: 16px;
+    font-size: 22px;
     padding: 6px 8px;
   }
 }
