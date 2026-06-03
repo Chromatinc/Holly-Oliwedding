@@ -1,26 +1,26 @@
 @import url('https://googleapis.com');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
-
 * {
   font-family: 'Dancing Script', cursive;
-  box-sizing: border-box;
 }
 
-/* NAVBAR */
+
+
 .navbar {
   display: flex;
   justify-content: center;
   gap: 20px;
   padding: 15px;
-  flex-wrap: wrap;
+  font-size: larger;
+  
+
+
+
+ 
 }
 
-.navbar a {
-  color: black;
-  font-size: 25px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
+
+
+
 
 .navbar a:hover {
   color: #8a7350;
@@ -28,18 +28,383 @@
   transform: translateY(-2px);
 }
 
-/* COUNTDOWN */
+
+
+
+
+.navbar a {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+  
+}
+
 #countdown {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+
   text-align: center;
-  font-size: 40px;
+  font-size: 20px;
   margin-top: 0;
 }
 
-/* HEADINGS */
+
+#h2 {
+  text-align: center;  margin-bottom: 10px;
+  
+}
+
+
+#fadecrop-image {
+  width: 500px;
+   height: 550px;
+   object-fit: cover;
+   object-position: center bottom;
+   margin-bottom: 40px;
+
+  -webkit-mask-image: radial-gradient(circle, black 0%, transparent 100%);
+  mask-image: radial-gradient(circle, black 60%, transparent 100%);
+  
+}
+
+
+  
+
+ a img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+a:hover img {
+  transform: scale(1.04);
+  opacity: 0.9;
+}
+
+
+
+figure {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+figcaption {
+  font-size: 18px;}
+
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;        /* or whatever height your slider is */
+  object-fit: cover;    /* key property */
+  display: block;
+}
+
+
+# {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.slide p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.active {
+  display: flex;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 45%;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+button:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+
+#japan {
+  width: 300px;
+  height: 500px;
+}
+  
+#nyc {
+  width: 300px;
+  height: 500px;
+}
+
+#target {
+  width: 300px;
+  height: 500px;
+}
+
+
+
+
+ul {
+  margin-top: 50px;
+}
+
+
+
+/* Timeline container */
+.timeline {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Each item */
+.timeline li {
+  background: #ffffff;
+  margin-bottom: 30px;
+  padding: 18px 20px;
+  border-left: 5px solid #c9a86a;
+   border-right: 5px solid #c9a86a;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  line-height: 1.5;
+  
+   
+}
+
+/* Time label */
+.time {
+  font-weight: bold;
+  color: #c9a86a;
+  text-align: center;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+
+h1, h2, h4,h5 {
+  text-align: center;
+  width: 100%;
+}
+
+
+ h3,h4,h5 {
+  text-align: center;
+  width: 100%;
+  margin-top: 80px;
+}
+
+
+
+.timeline li {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* MOBILE + RESPONSIVE FIXES */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+}
+
+.navbar a {
+  color: black;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/* Responsive main content */
+main {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+
+
+
+#Engage {
+  object-fit: contain;
+
+}
+
+
+#duo {
+  object-fit: contain;
+
+}
+
+
+#photoshoot {
+  object-fit: contain;
+
+}
+
+/* Responsive video */
+.video-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+/* All images scale properly */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+  .navbar {
+    gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 18px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 2rem;
+  }
+
+  #countdown {
+    flex-wrap: wrap;
+    font-size: 16px;
+  }
+
+  .timeline {
+    width: 100%;
+  }
+
+  .timeline li {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .slide p {
+    font-size: 1rem;
+  }
+
+  button.prev,
+  button.next {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+
+footer {
+text-align: center;
+}
+
+
+
+#countdownheader
+{margin-top: 0px;}
+
+
+
+
+
+.timeline {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.timeline ul,
+.timeline ol {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.timeline li {
+  list-style: none;
+}
+
+
 h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 4rem;
@@ -60,138 +425,56 @@ h2 {
   margin-top: 10px;
 }
 
-/* MAIN LAYOUT */
-main {
-  max-width: 800px;
-  width: 100%;
-  margin: auto;
-  padding: 1rem;
+h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #c9a86a;
+  margin: 12px auto 0;
 }
 
-/* IMAGES */
-img {
-  max-width: 100%;
-  height: auto;
-}
+#orderheading {margin-bottom: 60px;}
 
-/* TIMELINE */
-.timeline {
-  max-width: 700px;
-  margin: 0 auto;
-  padding-left: 0;
-}
 
-.timeline li {
-  list-style: none;
-  background: #ffffff;
-  margin-bottom: 30px;
-  padding: 18px 20px;
-  border-left: 5px solid #c9a86a;
-  border-right: 5px solid #c9a86a;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+
+
+#dresscodeh3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 1.5rem;
   text-align: center;
+  color: #5a5a5a;
+  max-width: 600px;
+  margin: 60px auto 0 auto;
+  line-height: 1.6;
 }
 
-/* VIDEO */
-.video-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
+#dresscodep
+{text-align: center;}
 
-.video-container iframe {
-  width: 100%;
-  max-width: 700px;
-  aspect-ratio: 16 / 9;
-  border: none;
-}
-
-/* SLIDER */
-.slide {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-}
-
-.slide img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-/* NAV BUTTONS */
-button.prev,
-button.next {
-  position: absolute;
-  top: 45%;
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 20px;
-  border-radius: 50%;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-}
-
-/* ========================= */
-/* 📱 MOBILE IMPROVEMENTS */
-/* ========================= */
 
 @media (max-width: 768px) {
-
-  /* NAVBAR BIGGER ON MOBILE */
   .navbar {
-    gap: 12px;
-    padding: 12px;
+    gap: 8px;
+    padding: 10px;
   }
 
   .navbar a {
-    font-size: 20px;   /* 👈 increased from 16 */
-    padding: 8px 12px;
-  }
-
-  /* COUNTDOWN BIGGER */
-  #countdown {
-    font-size: 20px;   /* 👈 increased */
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-
-  /* HEADINGS SCALE NICELY */
-  h1 {
-    font-size: 2.8rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  /* TIMELINE */
-  .timeline li {
-    padding: 15px;
-    font-size: 18px;
-  }
-
-  /* SLIDER TEXT */
-  .slide p {
-    font-size: 1rem;
-  }
-
-  /* BUTTONS */
-  button.prev,
-  button.next {
-    padding: 10px 14px;
-    font-size: 18px;
-  }
-
-  iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9;
+    font-size: 16px;
+    padding: 6px 8px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 8px;
+  }
+
+  .navbar a:active {
+    transform: scale(0.95);
+  }
+}      
