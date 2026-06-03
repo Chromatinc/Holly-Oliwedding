@@ -12,6 +12,7 @@
   padding: 15px;
   font-size: larger;
   
+  
 
 
 
@@ -257,21 +258,17 @@ h1, h2, h4,h5 {
   box-sizing: border-box;
 }
 
-/* Responsive navbar */
-.navbar {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  padding: 15px;
-}
+@media (max-width: 768px) {
+  .navbar {
+    gap: 2px;
+    padding: 10px;
+  }
 
-.navbar a {
-  color: black;
-  font-size: 35px;
-  text-decoration: none;
+  .navbar a {
+    font-size: 18px;
+    padding: 4px;
+  }
 }
-
 /* Responsive main content */
 main {
   max-width: 800px;
@@ -493,4 +490,24 @@ h2::after {
   aspect-ratio: 16 / 9;
   display: block;
   border: 0;
+}
+
+
+@media (max-width: 768px) {
+
+  p,
+  li,
+  figcaption {
+    font-size: 22px;
+    line-height: 1.8;
+  }
+
+  .slide p {
+    font-size: 22px;
+  }
+
+  .timeline li {
+    font-size: 22px;
+  }
+
 }
